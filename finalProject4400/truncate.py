@@ -15,7 +15,7 @@ sbert_model = SentenceTransformer('stsb-roberta-large')
 def cosine(u, v):
     return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
 
-truncate = pd.read_csv('csv_file.csv')
+truncate = pd.read_csv('output.csv')
 leftTable = pd.read_csv(join("data", "ltable.csv"))
 rightTable = pd.read_csv(join("data", "rtable.csv"))
 
