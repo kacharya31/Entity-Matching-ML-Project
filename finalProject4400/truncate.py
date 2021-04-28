@@ -3,7 +3,7 @@ import numpy as np
 from os.path import join
 import csv
 
-csv_file = open("csv_file.csv", "w")
+csv_file = open("finalOutput.csv", "w")
 writer = csv.DictWriter(csv_file, fieldnames = ["ltable_id", "rtable_id"])
 writer.writeheader()
 
